@@ -4,4 +4,11 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RM1.Framework1\RM7.Framework.csproj" />
+    <ProjectReference Include="..\RM7.IService\RM7.IService.csproj" />
+    <ProjectReference Include="..\RM7.Model\RM7.Model.csproj" />
+    <ProjectReference Include="..\RM7.Service\RM7.Service.csproj" />
+  </ItemGroup>
+
 </Project>

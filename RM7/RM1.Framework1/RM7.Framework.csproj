@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBHelper\DBHelper.cs" />
     <Compile Include="Encrypt\DesEncrypt.cs" />
     <Compile Include="Encrypt\MD5Encrypt.cs" />
     <Compile Include="Encrypt\RsaEncrypt.cs" />

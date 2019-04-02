@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RM7.Service", "RM7.Service\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RM7.Framework", "RM1.Framework1\RM7.Framework.csproj", "{E94FB50E-9CF6-4AFE-8A9F-234C3E4E4DB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RM7.Login", "RM7.Login\RM7.Login.csproj", "{34878966-9399-4CBA-A8B5-70DE68A7F6C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{E94FB50E-9CF6-4AFE-8A9F-234C3E4E4DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E94FB50E-9CF6-4AFE-8A9F-234C3E4E4DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E94FB50E-9CF6-4AFE-8A9F-234C3E4E4DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34878966-9399-4CBA-A8B5-70DE68A7F6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34878966-9399-4CBA-A8B5-70DE68A7F6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34878966-9399-4CBA-A8B5-70DE68A7F6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34878966-9399-4CBA-A8B5-70DE68A7F6C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
