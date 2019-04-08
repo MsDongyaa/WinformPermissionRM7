@@ -12,7 +12,7 @@ namespace RM7.Login
 {
     public partial class Login : Form
     {
-        public bool IsLoginSuccessful;
+        internal bool IsLoginSuccessful;
 
         public Login()
         {

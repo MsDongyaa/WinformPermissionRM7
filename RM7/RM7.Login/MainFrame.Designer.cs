@@ -105,6 +105,7 @@
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.Name = "MainFrame";
             this.ShowIcon = false;
             this.Text = "权限管理系统";
