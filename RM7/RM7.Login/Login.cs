@@ -12,6 +12,8 @@ namespace RM7.Login
 {
     public partial class Login : Form
     {
+        public bool IsLoginSuccessful;
+
         public Login()
         {
             InitializeComponent();
@@ -23,7 +25,12 @@ namespace RM7.Login
             if (string.IsNullOrWhiteSpace(account.Text)||string.IsNullOrWhiteSpace(password.Text))
             {
                 MessageBox.Show("账号密码不能为空！");
+                return;
             }
+
+            //TODO:后面的代码要等验证成功后才能执行
+            IsLoginSuccessful = true;
+            this.Close();
         }
 
         private void btnSign_Click(object sender, EventArgs e)
