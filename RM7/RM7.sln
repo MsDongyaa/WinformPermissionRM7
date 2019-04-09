@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RM7", "RM7\RM7.csproj", "{F18917A8-A4FF-4391-A8CE-B72A2659BAE0}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{412553A7-EB24-465C-B6D3-AD8118CFB33C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBTest", "DBTest\DBTest.csproj", "{5B048810-A002-447E-869B-15D7AEEF0D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RM7.UserManage", "RM7.UserManage\RM7.UserManage.csproj", "{C97B172D-D379-49E9-8A4F-4ECF28A6719F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{5B048810-A002-447E-869B-15D7AEEF0D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B048810-A002-447E-869B-15D7AEEF0D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B048810-A002-447E-869B-15D7AEEF0D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C97B172D-D379-49E9-8A4F-4ECF28A6719F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C97B172D-D379-49E9-8A4F-4ECF28A6719F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C97B172D-D379-49E9-8A4F-4ECF28A6719F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C97B172D-D379-49E9-8A4F-4ECF28A6719F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

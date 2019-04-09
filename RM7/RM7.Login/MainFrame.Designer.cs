@@ -35,7 +35,7 @@
             this.m_roleManageMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.m_authorityMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.m_logManageMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.m_layoutPanel = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,25 +90,26 @@
             this.m_logManageMenu.Size = new System.Drawing.Size(68, 21);
             this.m_logManageMenu.Text = "日志管理";
             // 
-            // panel1
+            // m_layoutPanel
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 25);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1008, 704);
-            this.panel1.TabIndex = 2;
+            this.m_layoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_layoutPanel.Location = new System.Drawing.Point(0, 25);
+            this.m_layoutPanel.Name = "m_layoutPanel";
+            this.m_layoutPanel.Size = new System.Drawing.Size(1008, 704);
+            this.m_layoutPanel.TabIndex = 2;
             // 
             // MainFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.m_layoutPanel);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.Name = "MainFrame";
             this.ShowIcon = false;
             this.Text = "权限管理系统";
+            this.SizeChanged += new System.EventHandler(this.OnMainFrameSizeChanged);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -125,6 +126,6 @@
         private System.Windows.Forms.ToolStripMenuItem m_roleManageMenu;
         private System.Windows.Forms.ToolStripMenuItem m_authorityMenu;
         private System.Windows.Forms.ToolStripMenuItem m_logManageMenu;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel m_layoutPanel;
     }
 }

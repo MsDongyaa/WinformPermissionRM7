@@ -18,7 +18,7 @@ namespace RM7.Login
         {
             InitializeComponent();
             BindingMenuClickEvent();
-            SubFormDispatcher.Initialize(this);
+            SubFormDispatcher.Initialize(this, m_layoutPanel);
         }
 
         private void BindingMenuClickEvent()
@@ -46,6 +46,18 @@ namespace RM7.Login
             catch (Exception ex)
             {
                 LogHelper.Log(ex.Message + "\r\n" + ex.StackTrace);
+            }
+        }
+
+        private void OnMainFrameSizeChanged(object sender, EventArgs e)
+        {
+            foreach (var control in m_layoutPanel.Controls)
+            {
+                if (control is Form)
+                {
+                    (control as Form).WindowState = FormWindowState.Normal;
+                    (control as Form).WindowState = FormWindowState.Maximized;
+                }
             }
         }
     }

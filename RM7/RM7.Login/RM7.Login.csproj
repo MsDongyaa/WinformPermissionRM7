@@ -119,6 +119,10 @@
       <Project>{448d26fd-bde1-4ee7-8acf-7907e90650cc}</Project>
       <Name>RM7.Service</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RM7.UserManage\RM7.UserManage.csproj">
+      <Project>{C97B172D-D379-49E9-8A4F-4ECF28A6719F}</Project>
+      <Name>RM7.UserManage</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
