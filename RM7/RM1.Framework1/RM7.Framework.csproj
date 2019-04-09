@@ -49,6 +49,7 @@
     <Compile Include="LogHelper\LogHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaticConstant.cs" />
+    <Compile Include="Utilities\EnumCommonMethods.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

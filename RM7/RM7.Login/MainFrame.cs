@@ -1,4 +1,6 @@
-﻿using System;
+﻿using RM1.Framework1.Utilities;
+using RM7.Framework.LogHelper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,48 +18,35 @@ namespace RM7.Login
         {
             InitializeComponent();
             BindingMenuClickEvent();
+            SubFormDispatcher.Initialize(this);
         }
 
         private void BindingMenuClickEvent()
         {
-            m_userManageMenu.Click += OnUserManageMenuClick;
-            m_orgManageMenu.Click += OnOrgManageMenuClick;
-            m_userGroupManageMenu.Click += OnUserGroupManageMenuClick;
-            m_roleManageMenu.Click += OnRoleManageMenuClick;
-            m_authorityMenu.Click += OnAuthorityMenuClick;
-            m_logManageMenu.Click += OnLogManageMenuClick;
+            m_userManageMenu.Click += OnMenuClick;
+            m_orgManageMenu.Click += OnMenuClick;
+            m_userGroupManageMenu.Click += OnMenuClick;
+            m_roleManageMenu.Click += OnMenuClick;
+            m_authorityMenu.Click += OnMenuClick;
+            m_logManageMenu.Click += OnMenuClick;
         }
 
-
-
-        private void OnUserManageMenuClick(object sender, EventArgs e)
+        private void OnMenuClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
-        }
-
-        private void OnOrgManageMenuClick(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void OnUserGroupManageMenuClick(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void OnRoleManageMenuClick(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void OnAuthorityMenuClick(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void OnLogManageMenuClick(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
+            try
+            {
+                ToolStripMenuItem menuItem = sender as ToolStripMenuItem;
+                if (menuItem == null)
+                {
+                    return;
+                }
+                SubFormDispatcher.SubFormTitle subFormTitle = EnumCommonMethods.GetEnumValue<SubFormDispatcher.SubFormTitle>(menuItem.Text);
+                SubFormDispatcher.ShowSubForm(subFormTitle);
+            }
+            catch (Exception ex)
+            {
+                LogHelper.Log(ex.Message + "\r\n" + ex.StackTrace);
+            }
         }
     }
 }
